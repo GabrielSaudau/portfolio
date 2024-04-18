@@ -5,6 +5,7 @@ export type SideProjectProps = {
   Logo: LucideIcon
   title: string
   description: string
+  shortDescription: string | null
   url: string
 }
 
@@ -12,6 +13,7 @@ export const SideProject = ({
   Logo,
   title,
   description,
+  shortDescription,
   url,
 }: SideProjectProps) => {
   return (
@@ -26,7 +28,12 @@ export const SideProject = ({
       </span>
       <div>
         <p className="text-lg font-semibold">{title}</p>
-        <p className="text-lg text-muted-foreground">{description}</p>
+        <p className="text-lg text-muted-foreground max-sm:hidden">
+          {description}
+        </p>
+        <p className="text-lg text-muted-foreground md:hidden">
+          {shortDescription}
+        </p>
       </div>
       <div className="ml-auto">
         <ArrowUpRight

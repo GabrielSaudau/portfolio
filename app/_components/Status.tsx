@@ -53,6 +53,7 @@ export const Status = () => {
                 Logo={project.Logo}
                 title={project.title}
                 description={project.description}
+                shortDescription={project.shortDescription}
                 url={project.url}
               />
             ))}
