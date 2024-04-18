@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "Gabriel Saudau - Frontend developer",
   description: "Gabriel Saudau - Portfolio",
   icons: {
-    icon: "/gabriel.png",
+    icon: "/favicon.ico",
   },
 }
 
