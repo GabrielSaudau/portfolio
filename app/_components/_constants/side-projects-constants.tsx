@@ -5,7 +5,7 @@ export const SIDE_PROJECTS: SideProjectProps[] = [
   {
     Logo: TextSearch,
     title: "PDF2AI",
-    description: "Talk with an ai to you understand your pdf",
+    description: "Chat to your PDF files.",
     url: "https://pdf-2-ai.vercel.app/",
   },
 ]

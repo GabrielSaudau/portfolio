@@ -4,6 +4,7 @@ import { GeistMono } from "geist/font/mono"
 import { Anek_Telugu } from "next/font/google"
 import "./globals.css"
 import { cn } from "@/lib/utils"
+import { Analytics } from "@vercel/analytics/react"
 
 const anekTelugu = Anek_Telugu({
   subsets: ["latin"],
@@ -13,6 +14,9 @@ const anekTelugu = Anek_Telugu({
 export const metadata: Metadata = {
   title: "Gabriel Saudau - Frontend developer",
   description: "Gabriel Saudau - Portfolio",
+  icons: {
+    icon: "/gabriel.png",
+  },
 }
 
 export default function RootLayout({
@@ -31,6 +35,7 @@ export default function RootLayout({
         )}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   )
