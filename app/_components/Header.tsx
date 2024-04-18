@@ -9,7 +9,7 @@ export type HeaderProps = {}
 
 export const Header = (props: HeaderProps) => {
   return (
-    <header className="sticky top-0 py-4 backdrop-blur-md">
+    <header className="sticky top-0 py-4 backdrop-blur-md shadow-md">
       <Section classname="flex items-baseline">
         <h1 className="text-lg font-bold text-primary">gabrielsaudau.com</h1>
         <div className="flex-1" />
