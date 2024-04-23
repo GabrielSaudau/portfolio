@@ -8,7 +8,7 @@ export const ContactMe = () => (
   <Section classname="flex flex-col items-start gap-4">
     <Badge variant="outline">Contact me</Badge>
     <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-      I would be happy to work for you.
+      I would be happy to work with you.
     </h2>
     <div className="flex max-md:flex-col w-full gap-4">
       <Link
@@ -73,7 +73,7 @@ export const ContactMe = () => (
           <div className="flex items-center gap-2">
             <p className="text-lg font-semibold">Phone</p>
           </div>
-          <p className="text-xs text-muted-foreground">06.51.11.94.60</p>
+          <p className="text-xs text-muted-foreground">+33 6 51 11 94 60</p>
         </div>
       </Card>
     </div>
