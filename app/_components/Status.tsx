@@ -48,14 +48,7 @@ export const Status = () => {
           <p className="text-lg w-full text-muted-foreground">Side projets</p>
           <div className="flex flex-col gap-4">
             {SIDE_PROJECTS.map((project, index) => (
-              <SideProject
-                key={index}
-                Logo={project.Logo}
-                title={project.title}
-                description={project.description}
-                shortDescription={project.shortDescription}
-                url={project.url}
-              />
+              <SideProject key={index} project={project} />
             ))}
           </div>
         </Card>

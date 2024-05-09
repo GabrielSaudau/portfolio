@@ -1,21 +1,14 @@
-import { ArrowUpRight, LucideIcon } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
+import { ProjectType } from "./_constants/side-projects-constants"
 
 export type SideProjectProps = {
-  Logo: LucideIcon
-  title: string
-  description: string
-  shortDescription: string | null
-  url: string
+  project: ProjectType
 }
 
-export const SideProject = ({
-  Logo,
-  title,
-  description,
-  shortDescription,
-  url,
-}: SideProjectProps) => {
+export const SideProject = ({ project }: SideProjectProps) => {
+  const { Logo, image, title, description, shortDescription, url } = project
   return (
     <Link
       href={url}
@@ -24,7 +17,10 @@ export const SideProject = ({
       type="external"
     >
       <span className="bg-accent text-accent-foreground p-3 rounded-sm">
-        <Logo size={16} />
+        {Logo ? <Logo size={16} /> : null}
+        {image ? (
+          <Image src={image} alt={`${title} logo`} width={16} height={16} />
+        ) : null}
       </span>
       <div>
         <p className="text-lg font-semibold">{title}</p>
