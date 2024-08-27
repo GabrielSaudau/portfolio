@@ -5,7 +5,6 @@ import { Code } from "./Code"
 import { TailwindIcon } from "./icons/TailwindIcon"
 import { NextIcon } from "./icons/NextIcon"
 import Link from "next/link"
-import { MentionIcon } from "./icons/MentionIcon"
 
 export const Skills = () => (
   <Section classname="flex flex-col items-start gap-4">

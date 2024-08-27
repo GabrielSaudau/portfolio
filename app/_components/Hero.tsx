@@ -1,7 +1,4 @@
-import { ComponentPropsWithoutRef } from "react"
 import { Section } from "./Section"
-import { cn } from "@/lib/utils"
-import { MentionIcon } from "./icons/MentionIcon"
 import { ReactIcon } from "./icons/ReactIcon"
 import { Home } from "lucide-react"
 import Link from "next/link"
@@ -20,10 +17,10 @@ export const Hero = () => {
           <Code className="inline-flex items-center gap-1">
             <ReactIcon size={16} /> Reactjs
           </Code>
-          . Previously working for{" "}
+          . Working for{" "}
           <Code className="inline-flex items-center gap-1">
-            <Link href="https://mention.com/fr/" target="blank" type="external">
-              <MentionIcon className="inline" size={16} /> Mention
+            <Link href="https://www.ocus.com/" target="blank" type="external">
+              Ocus
             </Link>
           </Code>
           . Living in{" "}
