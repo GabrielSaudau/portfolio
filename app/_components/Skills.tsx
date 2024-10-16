@@ -42,7 +42,13 @@ export const Skills = () => (
         <h3 className="text-2xl font-semibold tracking-tight">Nextjs</h3>
         <p className="text-sm text-muted-foreground">
           This is the framework I love working with for my side projects. I use{" "}
-          <Code>Nextjs</Code> as frontend and backend framework.
+          <Code>Nextjs</Code> as frontend and backend framework. I'm using
+          NextJS in my current job in{" "}
+          <Code className="inline-flex items-center gap-1">
+            <Link href="https://www.ocus.com/" target="blank" type="external">
+              Ocus
+            </Link>
+          </Code>
         </p>
       </div>
     </div>
